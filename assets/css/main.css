@@ -30,6 +30,11 @@
 		list-style: none;
 	}
 
+	.threadhead
+	{
+		font-size: 72
+	}
+
 	blockquote, q {
 		quotes: none;
 	}
