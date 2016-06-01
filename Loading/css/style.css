@@ -1,0 +1,39 @@
+body {
+  background: lightblue;
+}
+.container {
+  margin: 300px 300px auto;
+  width: 1000px;
+}
+
+.container > div {
+  background: white;
+  border-radius: 30%;
+  float: left;
+  height: 108px;
+  margin-right: 12px;
+  width: 108px;
+}
+
+.container > div {
+  animation: hop 0.6s infinite;
+}
+
+.container > div:nth-child(1) {
+  animation-delay: .1s;
+}
+.container > div:nth-child(2) {
+  animation-delay: .2s;
+}
+.container > div:nth-child(3) {
+  animation-delay: .3s;
+}
+.container > div:nth-child(4) {
+  animation-delay: .4s;
+}
+
+@keyframes hop {
+  0%   { margin-top: 0; background-color: purple;}
+  50% { margin-top: -18px; background-color:blue; transform: rotate(180deg); border-radius: 50%}
+  100% { margin-top: 0; background-color: red; transform:rotate(180deg)}
+}
